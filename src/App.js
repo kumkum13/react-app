@@ -1,6 +1,6 @@
  //import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-//import  About from './components/About';
+import  About from './components/About';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -48,11 +48,13 @@ import React, { useState } from 'react';
         <div className="container my-3">
        {/* <Routes>*/}
          {/* <Route exact path="/about"  element = {<About />}/>*/}
-            
+         
            
           {/*<Route exact path="/" element = {*/}
-          <TextForm showAlert={showAlert} heading="Entre the text to analyse below" mode={ mode}/>
+          <TextForm showAlert={showAlert} heading="TRY MY-APP : Word counter | character counter | uppercase convertor | lowercase convertor" mode={ mode}/>
           {/*} />*/}
+          <About mode={ mode} />
+
             
         {/*</Routes>*/}
          </div>
